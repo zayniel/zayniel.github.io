@@ -1,0 +1,141 @@
+@font-face{
+  font-family: "Backslash";
+  src: url('./Backslash.otf') format('opentype');
+}
+
+.App {
+  text-align: center;
+  background-image: url("./image.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.resume {
+  height: 30vmin;
+  position: absolute;
+  right: 300px;
+  top: 220px;
+  transition: transform .2s;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px black;
+}
+
+.resume:hover {
+  transform: scale(1.2);
+}
+
+.resume-text {
+  font-size: 45px;
+  font-family: "Backslash";
+  color: #2b2b2b;
+  text-shadow: 0px 0px 5px beige;
+  position: absolute;
+  right: 235px;
+  top: 550px;
+}
+
+.App-logo {
+  height: 30vmin;
+  position: relative;
+  border-radius: 60px;
+  box-shadow: 0px 0px 15px black;
+  transition: transform .2s;
+}
+
+.App-logo:hover {
+  transform: scale(1.2);
+}
+
+.container {
+  height: 800px;
+  scale: 0.25;
+  transition: transform .2s;
+}
+
+.gallery {
+  margin: 0;
+  background: url('./gallery_images.png') repeat-x;
+  height: 1080px;
+  width: 19940px;
+  animation: slide 30s linear infinite;
+  box-shadow: 0px 0px 70px black;
+} 
+
+.gallery:hover {
+  animation-play-state: paused;
+}
+
+.container:hover {
+  transform: scale(1.4);
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(-3240px, 0, 0);
+  }
+  100% {
+    transform: translate3d(-9720px, 0, 0);
+  }
+}
+
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 2s linear;
+  }
+}
+*/
+
+/*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+*/
+
+.App-header {
+  height: 2vh;
+  position: relative;
+  font-size: 50px;
+  font-family: "Backslash";
+  color: #5a5a5a;
+  text-shadow: 0px 0px 10px black;
+  margin: 0;
+}
+
+.App-header h1 {
+  font-size: 75px;
+  font-family: "Backslash";
+  color: #2b2b2b;
+  text-shadow: 0px 0px 5px beige;
+  margin: 38px;
+}
+
+.App-header a {
+  font-size: 45px;
+  font-family: "Backslash";
+  color: rgb(65, 75, 85);
+  text-shadow: 0px 0px 5px beige;
+  margin: 0;
+}
+
+a:link, a:visited {
+  color: rgb(65, 75, 85);
+  text-decoration: none;
+}
+
+a:hover {
+  color: beige;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
+}
