@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import pfp from './newpfp.jpg';
-import Obunga from './Obunga.jpg';
 import border from './border.jpg';
 import Blur from "react-blur";
 import resume from './Resume (2).jpg';
