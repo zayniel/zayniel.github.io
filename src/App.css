@@ -13,33 +13,80 @@
   overflow: hidden;
 }
 
-.resume {
-  height: 30vmin;
-  position: absolute;
-  right: 300px;
-  top: 220px;
-  transition: transform .2s;
-  border-radius: 8px;
-  box-shadow: 0px 0px 15px black;
+@media only screen and (min-width: 1500px) {
+  .resume {
+    height: 30vmin;
+    position: absolute;
+    right: 300px;
+    top: 220px;
+    transition: transform .2s;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
+  }
+
+  .resume-text {
+    font-size: 45px;
+    font-family: "Backslash";
+    color: #2b2b2b;
+    text-shadow: 0px 0px 5px beige;
+    position: absolute;
+    right: 235px;
+    top: 550px;
+  }
+
+  .container {
+    position: relative;
+    top: 250px;
+    height: 800px;
+    scale: 0.25;
+    transition: transform .2s;
+    margin-bottom: 120px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .resume {
+    height: 30vmin;
+    position: relative;
+    top: 530px;
+    transition: transform .2s;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
+  }
+
+  .resume-text {
+    font-size: 45px;
+    font-family: "Backslash";
+    color: #2b2b2b;
+    text-shadow: 0px 0px 5px beige;
+    position: relative;
+    top: 570px;
+  }
+
+  .container {
+    position: relative;
+    top: 330px;
+    height: 800px;
+    scale: 0.25;
+    transition: transform .2s;
+    margin-bottom: 170px;
+  }
 }
 
 .resume:hover {
   transform: scale(1.2);
 }
 
-.resume-text {
-  font-size: 45px;
-  font-family: "Backslash";
-  color: #2b2b2b;
-  text-shadow: 0px 0px 5px beige;
-  position: absolute;
-  right: 235px;
-  top: 550px;
-}
+
 
 .App-logo {
   height: 30vmin;
-  position: relative;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 0;
   border-radius: 60px;
   box-shadow: 0px 0px 15px black;
   transition: transform .2s;
@@ -47,12 +94,6 @@
 
 .App-logo:hover {
   transform: scale(1.2);
-}
-
-.container {
-  height: 800px;
-  scale: 0.25;
-  transition: transform .2s;
 }
 
 .gallery {
@@ -99,11 +140,14 @@
 .App-header {
   height: 2vh;
   position: relative;
+  top: 280px;
+  left: 0;
+  right: 0;
+  text-align: center;
   font-size: 50px;
   font-family: "Backslash";
   color: #5a5a5a;
   text-shadow: 0px 0px 10px black;
-  margin: 0;
 }
 
 .App-header h1 {
@@ -111,7 +155,7 @@
   font-family: "Backslash";
   color: #2b2b2b;
   text-shadow: 0px 0px 5px beige;
-  margin: 38px;
+  margin: auto;
 }
 
 .App-header a {
@@ -119,7 +163,8 @@
   font-family: "Backslash";
   color: rgb(65, 75, 85);
   text-shadow: 0px 0px 5px beige;
-  margin: 0;
+  position: relative;
+  top: 20px;
 }
 
 a:link, a:visited {

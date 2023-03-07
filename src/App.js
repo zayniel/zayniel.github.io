@@ -13,14 +13,37 @@ function App() {
     <br></br> 
     <br></br>   
 
+    <img src={pfp} className="App-logo" alt="pfp" />
+
+    <header className="App-header">
+        <p>
+          <h1>Zayne Pepin</h1>
+          <a
+          href="https://www.linkedin.com/in/zayne-pepin-546a38220/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          LinkedIn
+        </a>
+        <a
+        href="https://github.com/zayniel"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <br></br>
+          GitHub 
+        </a>
+        </p>
+        
+  </header>
+
       <a href={resume} target="_blank">
         <img src={resume} className="resume" alt="resume" />
       </a>
 
       <div className="resume-text">View My Resume</div>
 
-      <img src={pfp} className="App-logo" alt="pfp" />
-      
+      {/*
       <header className="App-header">
         <p>
           <h1>Zayne Pepin</h1>
@@ -41,7 +64,8 @@ function App() {
         </a>
         </p>
         
-        </header>
+  </header> */}
+
         <div className="container">
           <div className="gallery"></div>
         </div>
