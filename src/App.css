@@ -14,11 +14,12 @@
 }
 
 @media only screen and (min-width: 1500px) {
+
   .resume {
     height: 30vmin;
     position: absolute;
-    right: 300px;
-    top: 220px;
+    right: 290px;
+    top: 200px;
     transition: transform .2s;
     border-radius: 8px;
     box-shadow: 0px 0px 15px black;
@@ -30,7 +31,7 @@
     color: #2b2b2b;
     text-shadow: 0px 0px 5px beige;
     position: absolute;
-    right: 235px;
+    right: 230px;
     top: 550px;
   }
 
@@ -44,7 +45,8 @@
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 400px) and (max-width: 1500px) {
+
   .resume {
     height: 30vmin;
     position: relative;
@@ -73,20 +75,46 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .resume {
+    height: 30vmin;
+    position: relative;
+    top: 600px;
+    transition: transform .2s;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
+  }
+
+  .resume-text {
+    font-size: 45px;
+    font-family: "Backslash";
+    color: #2b2b2b;
+    text-shadow: 0px 0px 5px beige;
+    position: relative;
+    top: 630px;
+  }
+
+  .container {
+    position: relative;
+    top: 380px;
+    height: 800px;
+    scale: 0.25;
+    transition: transform .2s;
+    margin-bottom: 220px;
+  }
+}
+
 .resume:hover {
   transform: scale(1.2);
 }
 
-
-
 .App-logo {
-  height: 30vmin;
+  height: 300px;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 0;
   border-radius: 60px;
   box-shadow: 0px 0px 15px black;
   transition: transform .2s;
