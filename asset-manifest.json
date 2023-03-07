@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/zayniel.github.io/static/css/main.69727392.css",
-    "main.js": "/zayniel.github.io/static/js/main.e6057cf3.js",
-    "static/js/787.28cb0dcd.chunk.js": "/zayniel.github.io/static/js/787.28cb0dcd.chunk.js",
-    "static/media/gallery_images.png": "/zayniel.github.io/static/media/gallery_images.d581906c7eeb2b026072.png",
-    "static/media/image.png": "/zayniel.github.io/static/media/image.5f1c50d21f58aa9b0a8b.png",
-    "static/media/Resume (2).jpg": "/zayniel.github.io/static/media/Resume (2).8231cb5cf27aa4e40a12.jpg",
-    "static/media/newpfp.jpg": "/zayniel.github.io/static/media/newpfp.0dd9ade2085b978e95c7.jpg",
-    "static/media/border.jpg": "/zayniel.github.io/static/media/border.02de47b8afc37fcf582a.jpg",
-    "static/media/Backslash.otf": "/zayniel.github.io/static/media/Backslash.5e36796df08ea29b5db5.otf",
-    "static/media/logo.svg": "/zayniel.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/zayniel.github.io/index.html",
-    "main.69727392.css.map": "/zayniel.github.io/static/css/main.69727392.css.map",
-    "main.e6057cf3.js.map": "/zayniel.github.io/static/js/main.e6057cf3.js.map",
-    "787.28cb0dcd.chunk.js.map": "/zayniel.github.io/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "./static/css/main.7811b070.css",
+    "main.js": "./static/js/main.99a832fd.js",
+    "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
+    "static/media/gallery_images.png": "./static/media/gallery_images.d581906c7eeb2b026072.png",
+    "static/media/image.png": "./static/media/image.5f1c50d21f58aa9b0a8b.png",
+    "static/media/Resume (2).jpg": "./static/media/Resume (2).8231cb5cf27aa4e40a12.jpg",
+    "static/media/newpfp.jpg": "./static/media/newpfp.0dd9ade2085b978e95c7.jpg",
+    "static/media/border.jpg": "./static/media/border.02de47b8afc37fcf582a.jpg",
+    "static/media/Backslash.otf": "./static/media/Backslash.5e36796df08ea29b5db5.otf",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "main.7811b070.css.map": "./static/css/main.7811b070.css.map",
+    "main.99a832fd.js.map": "./static/js/main.99a832fd.js.map",
+    "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69727392.css",
-    "static/js/main.e6057cf3.js"
+    "static/css/main.7811b070.css",
+    "static/js/main.99a832fd.js"
   ]
 }
