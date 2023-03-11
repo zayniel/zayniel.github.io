@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import pfp from './newpfp.jpg';
+import pfp from './pfp.jpg';
 import border from './border.jpg';
 import Blur from "react-blur";
 import resume from './Resume (2).jpg';
@@ -37,6 +37,8 @@ function App() {
         
   </header>
 
+    <div className="about-me">About Me</div>
+    
       <a href={resume} target="_blank">
         <img src={resume} className="resume" alt="resume" />
       </a>
