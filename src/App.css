@@ -16,10 +16,11 @@
 @media only screen and (min-width: 1500px) {
 
   .resume {
-    height: 30vmin;
+    height: 310px;
     position: absolute;
-    right: 290px;
-    top: 200px;
+    left: 14%;
+    right: 86%;
+    top: 250px;
     transition: transform .2s;
     border-radius: 8px;
     box-shadow: 0px 0px 15px black;
@@ -31,8 +32,10 @@
     color: #2b2b2b;
     text-shadow: 0px 0px 5px beige;
     position: absolute;
-    right: 230px;
-    top: 550px;
+    width: 350px;
+    left: 10%;
+    right: 90%;
+    top: 100px;
   }
 
   .container {
@@ -43,12 +46,37 @@
     transition: transform .2s;
     margin-bottom: 120px;
   }
+
+  .about-me {
+    position: absolute;
+    width: 300px;
+    top: 100px;
+    left: 70%;
+    right: 30%;
+    font-size: 45px;
+    font-family: "Backslash";
+    color: #2b2b2b;
+    text-shadow: 0px 0px 5px beige;
+  }
+
+  .about-me-text {
+    position: absolute;
+    top: 200px;
+    left: 68%;
+    right: 32%;
+    width: 380px;
+    height: 200px;
+    font-size: 26px;
+    font-family: "Backslash";
+    color: rgb(65, 75, 85);
+    text-shadow: 0px 0px 7px beige; 
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 1500px) {
 
   .resume {
-    height: 30vmin;
+    height: 270px;
     position: relative;
     top: 530px;
     transition: transform .2s;
@@ -73,6 +101,29 @@
     transition: transform .2s;
     margin-bottom: 170px;
   }
+  
+  .about-me {
+    top: 490px;
+    position: relative;
+    font-size: 55px;
+    font-family: "Backslash";
+    color: #2b2b2b;
+    text-shadow: 0px 0px 5px beige;
+  }
+
+  .about-me-text {
+    top: 510px;
+    width: 400px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 26px;
+    font-family: "Backslash";
+    color: #2b2b2b;
+    text-shadow: 0px 0px 5px beige; 
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
