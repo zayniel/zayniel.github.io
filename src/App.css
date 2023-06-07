@@ -3,73 +3,136 @@
   src: url('./Backslash.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
 .App {
   text-align: center;
-  background-image: url("./image.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 1500px) {
 
   .resume {
-    height: 310px;
+    height: 330px;
     position: absolute;
-    left: 14%;
-    right: 86%;
-    top: 250px;
+    left: 73%;
+    right: 27%;
+    top: 220px;
     transition: transform .2s;
     border-radius: 8px;
     box-shadow: 0px 0px 15px black;
   }
 
-  .resume-text {
+  .about-me {
     font-size: 45px;
-    font-family: "Backslash";
+    font-family: "Open Sans Light";
     color: #2b2b2b;
-    text-shadow: 0px 0px 5px beige;
     position: absolute;
-    width: 350px;
-    left: 10%;
-    right: 90%;
+    width: 370px;
+    left: 8%;
+    right: 92%;
     top: 100px;
   }
 
   .container {
     position: relative;
-    top: 250px;
+    top: 80px;
     height: 800px;
     scale: 0.25;
     transition: transform .2s;
-    margin-bottom: 120px;
+    margin-top: 200px;
+    margin-bottom: 130px;
   }
 
-  .about-me {
+  .resume-text {
     position: absolute;
     width: 300px;
     top: 100px;
-    left: 70%;
-    right: 30%;
+    left: 71%;
+    right: 29%;
     font-size: 45px;
-    font-family: "Backslash";
+    font-family: "Open Sans Light";
     color: #2b2b2b;
-    text-shadow: 0px 0px 5px beige;
   }
 
   .about-me-text {
     position: absolute;
     top: 200px;
-    left: 68%;
-    right: 32%;
+    left: 8%;
+    right: 92%;
     width: 380px;
     height: 200px;
-    font-size: 26px;
-    font-family: "Backslash";
-    color: rgb(65, 75, 85);
-    text-shadow: 0px 0px 7px beige; 
+    font-size: 25px;
+    text-align: left;
+    font-family: "Open Sans Light";
+    color: #2b2b2b;
+  }
+
+  .project-header {
+    position: absolute;
+    top: 1070px;
+    left: 50px;
+    font-family: "Open Sans";
+    font-size: 55px;
+    color: #2b2b2b;
+  }
+
+  .pge-header {
+    position: absolute;
+    top: 1160px;
+    left: 50px;
+    font-family: "Open Sans Light";
+    font-size: 40px;
+    color: #2b2b2b;
+  }
+
+  .pge-desc {
+    position: absolute;
+    top: 1230px;
+    left: 50px;
+    width: 750px;
+    text-align: justify;
+    font-family: "Open Sans Light";
+    font-size: 25px;
+    color: #2b2b2b;
+    padding-bottom: 50px;
+  }
+
+  .pge-content {
+    position: absolute;
+    top: 1160px;
+    right: 50px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px black;
+  }
+
+  .construction {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1700px;
+    padding-bottom: 100px;
+    font-family: "Open Sans";
+    font-size: 40px;
+    color: #2b2b2b;
   }
 }
 
@@ -86,9 +149,8 @@
 
   .resume-text {
     font-size: 45px;
-    font-family: "Backslash";
+    font-family: "Open Sans Light";
     color: #2b2b2b;
-    text-shadow: 0px 0px 5px beige;
     position: relative;
     top: 570px;
   }
@@ -106,9 +168,8 @@
     top: 490px;
     position: relative;
     font-size: 55px;
-    font-family: "Backslash";
+    font-family: "Open Sans Light";
     color: #2b2b2b;
-    text-shadow: 0px 0px 5px beige;
   }
 
   .about-me-text {
@@ -119,9 +180,8 @@
     padding-bottom: 20px;
     position: relative;
     font-size: 26px;
-    font-family: "Backslash";
+    font-family: "Open Sans Light";
     color: #2b2b2b;
-    text-shadow: 0px 0px 5px beige; 
   }
 
 }
@@ -138,9 +198,8 @@
 
   .resume-text {
     font-size: 45px;
-    font-family: "Backslash";
+    font-family: "Open Sans Light";
     color: #2b2b2b;
-    text-shadow: 0px 0px 5px beige;
     position: relative;
     top: 630px;
   }
@@ -224,24 +283,22 @@
   right: 0;
   text-align: center;
   font-size: 50px;
-  font-family: "Backslash";
+  /*font-family: "Backslash";
   color: #5a5a5a;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 10px black;*/
 }
 
 .App-header h1 {
   font-size: 75px;
-  font-family: "Backslash";
+  font-family: "Open Sans Light";
   color: #2b2b2b;
-  text-shadow: 0px 0px 5px beige;
   margin: auto;
 }
 
 .App-header a {
   font-size: 45px;
-  font-family: "Backslash";
+  font-family: "Open Sans Light";
   color: rgb(65, 75, 85);
-  text-shadow: 0px 0px 5px beige;
   position: relative;
   top: 20px;
 }
@@ -252,7 +309,8 @@ a:link, a:visited {
 }
 
 a:hover {
-  color: beige;
+  text-decoration: underline;
+  color: rgb(95, 133, 117);
 }
 
 @keyframes App-logo-spin {
