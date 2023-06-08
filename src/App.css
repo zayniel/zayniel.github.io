@@ -26,6 +26,7 @@
 
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 1500px) {
@@ -120,8 +121,15 @@
     position: absolute;
     top: 1160px;
     right: 50px;
+    width: 40%;
     max-width: 800px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 15px black;
+    transition: .2s;
+  }
+
+  .pge-content:hover {
+    transform: scale(1.3);
+    translate: -100px;
   }
 
   .construction {
@@ -141,31 +149,31 @@
   .resume {
     height: 270px;
     position: relative;
-    top: 530px;
+    top: 700px;
     transition: transform .2s;
     border-radius: 8px;
     box-shadow: 0px 0px 15px black;
   }
 
   .resume-text {
-    font-size: 45px;
+    font-size: 55px;
     font-family: "Open Sans Light";
     color: #2b2b2b;
     position: relative;
-    top: 570px;
+    top: 640px;
   }
 
   .container {
+    visibility: hidden;
     position: relative;
-    top: 330px;
+    top: 410px;
     height: 800px;
     scale: 0.25;
     transition: transform .2s;
-    margin-bottom: 170px;
   }
   
   .about-me {
-    top: 490px;
+    top: 570px;
     position: relative;
     font-size: 55px;
     font-family: "Open Sans Light";
@@ -173,14 +181,67 @@
   }
 
   .about-me-text {
-    top: 510px;
-    width: 400px;
+    top: 580px;
+    width: 730px;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 20px;
     position: relative;
     font-size: 26px;
     font-family: "Open Sans Light";
+    color: #2b2b2b;
+  }
+
+  .project-header {
+    position: relative;
+    margin: auto;
+    font-family: "Open Sans";
+    font-size: 55px;
+    color: #2b2b2b;
+  }
+
+  .pge-header {
+    position: relative;
+    margin: auto;
+    font-family: "Open Sans Light";
+    font-size: 40px;
+    color: #2b2b2b;
+    top: 30px;
+  }
+
+  .pge-desc {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    width: 730px;
+    text-align: justify;
+    font-family: "Open Sans Light";
+    font-size: 26px;
+    color: #2b2b2b;
+    padding-bottom: 50px;
+  }
+
+  .pge-content {
+    position: relative;
+    top: 60px;
+    width: 50%;
+    max-width: 800px;
+    box-shadow: 0px 0px 15px black;
+    transition: .2s;
+  }
+
+  .pge-content:hover {
+    transform: scale(1.1);
+  }
+
+  .construction {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 1700px;
+    padding-bottom: 100px;
+    font-family: "Open Sans";
+    font-size: 40px;
     color: #2b2b2b;
   }
 
@@ -250,6 +311,8 @@
 .container:hover {
   transform: scale(1.4);
 }
+
+
 
 @keyframes slide {
   0% {
