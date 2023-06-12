@@ -5,6 +5,8 @@ import border from './border.jpg';
 import Blur from "react-blur";
 import resume from './Resume (2).jpg';
 import darkpge from './pge-assets/pge-dark-mode.PNG'
+import React from "react";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 function App() {
   return (
@@ -61,17 +63,24 @@ function App() {
       <div className="pge-desc">
         The PG&E Energy Reducer is a web application for Pacific Gas & Electric customers that allows them to visualize their heat and electric consumption through easily readable and understandable graphical representations. The app also shows trends and recurring energy spikes and gives the customer advice to help reduce their energy consumption as well as their energy costs.
         <br></br> <br></br>
-        Role: Developer
+        Role: Designer, Developer
         <br></br><br></br>
         <a
-        href="https://www.linkedin.com/in/zayne-pepin-546a38220/"
+        href="https://pge-app.sachinf.com"
         target="_blank"
         rel="noopener noreferrer">
           pge-app.sachinf.com
         </a>
       </div>
       <img src={darkpge} className="pge-content" alt="pgedark" />
-      
+
+      <div className="scheduler-header">MTU Course Scheduler</div>
+      <div className="scheduler-desc">A simplified class scheduling web application designed to match Michigan Technological Universities aesthetic. The purpose of this application is to give students a system that would assist in the selection of courses depending on their current year and degree requirements.
+      <br></br><br></br>
+      Role: Designer, Developer, SCRUM Master
+      <br></br><br></br>
+      </div>
+      <YoutubeEmbed embedId="3d4iqolwGbY"/>
 
       <div className="construction">In Construction...</div>
 
