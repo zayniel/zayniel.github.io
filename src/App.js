@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import pfp from './pfp.jpg';
-import border from './border.jpg';
-import Blur from "react-blur";
-import resume from './Resume (2).jpg';
+import pfp from './newpfp.jpg';
+import resume from './resume_upd.jpg';
 import darkpge from './pge-assets/pge-dark-mode.PNG'
 import React from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
@@ -82,7 +79,7 @@ function App() {
       </div>
       <YoutubeEmbed embedId="3d4iqolwGbY"/>
 
-      <div className="construction">In Construction...</div>
+      {/*<div className="construction">In Construction...</div>*/}
 
   </div>
   );

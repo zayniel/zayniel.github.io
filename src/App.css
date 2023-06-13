@@ -38,7 +38,7 @@
     right: 27%;
     top: 220px;
     transition: transform .2s;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 0px 15px black;
   }
 
@@ -67,8 +67,8 @@
     position: absolute;
     width: 300px;
     top: 100px;
-    left: 71%;
-    right: 29%;
+    left: 72%;
+    right: 28%;
     font-size: 45px;
     font-family: "Open Sans Light";
     color: #2b2b2b;
@@ -85,6 +85,7 @@
     text-align: left;
     font-family: "Open Sans Light";
     color: #2b2b2b;
+    transition: .2s;
   }
 
   .project-header {
@@ -115,11 +116,12 @@
     font-size: 25px;
     color: #2b2b2b;
     padding-bottom: 50px;
+    transition: .2s;
   }
 
   .pge-content {
     position: absolute;
-    top: 1160px;
+    top: 1175px;
     right: 50px;
     width: 40%;
     max-width: 800px;
@@ -150,36 +152,40 @@
     font-family: "Open Sans Light";
     font-size: 25px;
     color: #2b2b2b;
+    transition: .2s;
   }
 
   .video-responsive {
     overflow: hidden;
+    top: 400px;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    transition: .2s;
   }
   
   .video-responsive iframe {
     right: 50px;
-    top: 400px;
     height: 40%;
     width: 40%;
+    top: 15px;
+    max-width: 800px;
     position: absolute;
+    box-shadow: 0px 0px 15px black;
   }
 
-  .construction {
+  /*.construction {
     position: absolute;
     left: 0;
     right: 0;
     top: 2300px;
-    padding-bottom: 100px;
     font-family: "Open Sans";
     font-size: 40px;
     color: #2b2b2b;
-  }
+  }*/
 }
 
-@media only screen and (min-width: 400px) and (max-width: 1500px) {
+@media only screen and (min-width: 777px) and (max-width: 1500px) {
 
   .resume {
     height: 270px;
@@ -225,6 +231,7 @@
     font-size: 26px;
     font-family: "Open Sans Light";
     color: #2b2b2b;
+    transition: .2s;
   }
 
   .project-header {
@@ -254,6 +261,7 @@
     font-size: 26px;
     color: #2b2b2b;
     padding-bottom: 50px;
+    transition: .2s;
   }
 
   .pge-content {
@@ -271,14 +279,46 @@
 
   .scheduler-header {
     position: relative;
-    top: 1650px;
-    left: 50px;
+    margin: auto;
+    top: 120px;
     font-family: "Open Sans Light";
     font-size: 40px;
     color: #2b2b2b;
   }
 
-  .construction {
+  .scheduler-desc {
+    position: relative;
+    top: 140px;
+    margin: auto;
+    width: 730px;
+    text-align: justify;
+    font-family: "Open Sans Light";
+    font-size: 25px;
+    color: #2b2b2b;
+    transition: .2s;
+  }
+
+  .video-responsive {
+    right: 24%;
+    padding-right: 30px;
+    overflow: hidden;
+    top: 150px;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    transition: .2s;
+  }
+  
+  .video-responsive iframe {
+    height: 50%;
+    width: 50%;
+    top: 15px;
+    max-width: 800px;
+    position: absolute;
+    box-shadow: 0px 0px 15px black;
+  }
+
+  /*.construction {
     position: relative;
     left: 0;
     right: 0;
@@ -287,15 +327,161 @@
     font-family: "Open Sans";
     font-size: 40px;
     color: #2b2b2b;
+  }*/
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 777px) {
+
+  .resume {
+    height: 270px;
+    position: relative;
+    top: 700px;
+    transition: transform .2s;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
   }
+
+  .resume-text {
+    font-size: 55px;
+    font-family: "Open Sans Light";
+    color: #2b2b2b;
+    position: relative;
+    top: 640px;
+  }
+
+  .container {
+    visibility: hidden;
+    position: relative;
+    top: 410px;
+    height: 800px;
+    scale: 0.25;
+    transition: transform .2s;
+  }
+  
+  .about-me {
+    top: 570px;
+    position: relative;
+    font-size: 55px;
+    font-family: "Open Sans Light";
+    color: #2b2b2b;
+  }
+
+  .about-me-text {
+    top: 580px;
+    width: 400px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 26px;
+    font-family: "Open Sans Light";
+    color: #2b2b2b;
+    transition: .2s;
+  }
+
+  .project-header {
+    position: relative;
+    margin: auto;
+    font-family: "Open Sans";
+    font-size: 55px;
+    color: #2b2b2b;
+  }
+
+  .pge-header {
+    position: relative;
+    margin: auto;
+    font-family: "Open Sans Light";
+    font-size: 40px;
+    color: #2b2b2b;
+    top: 30px;
+  }
+
+  .pge-desc {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    width: 400px;
+    text-align: left;
+    font-family: "Open Sans Light";
+    font-size: 26px;
+    color: #2b2b2b;
+    padding-bottom: 50px;
+    transition: .2s;
+  }
+
+  .pge-content {
+    position: relative;
+    top: 60px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 0px 15px black;
+    transition: .2s;
+  }
+
+  .pge-content:hover {
+    transform: scale(1.1);
+  }
+
+  .scheduler-header {
+    position: relative;
+    margin: auto;
+    top: 120px;
+    font-family: "Open Sans Light";
+    font-size: 40px;
+    color: #2b2b2b;
+  }
+
+  .scheduler-desc {
+    position: relative;
+    top: 140px;
+    margin: auto;
+    width: 400px;
+    text-align: left;
+    font-family: "Open Sans Light";
+    font-size: 25px;
+    color: #2b2b2b;
+    transition: .2s;
+  }
+
+  .video-responsive {
+    padding-right: 80%;
+    overflow: hidden;
+    top: 150px;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    transition: .2s;
+    margin-bottom: 150px;
+  }
+  
+  .video-responsive iframe {
+    height: 80%;
+    width: 80%;
+    top: 15px;
+    max-width: 800px;
+    position: absolute;
+    box-shadow: 0px 0px 15px black;
+  }
+
+  /*.construction {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 1700px;
+    padding-bottom: 100px;
+    font-family: "Open Sans";
+    font-size: 40px;
+    color: #2b2b2b;
+  }*/
 
 }
 
 @media only screen and (max-width: 400px) {
   .resume {
-    height: 30vmin;
+    height: 300px;
     position: relative;
-    top: 600px;
+    top: 750px;
     transition: transform .2s;
     border-radius: 8px;
     box-shadow: 0px 0px 15px black;
@@ -306,17 +492,135 @@
     font-family: "Open Sans Light";
     color: #2b2b2b;
     position: relative;
-    top: 630px;
+    top: 700px;
   }
 
   .container {
+    visibility: hidden;
     position: relative;
     top: 380px;
     height: 800px;
     scale: 0.25;
     transition: transform .2s;
-    margin-bottom: 220px;
   }
+
+  .about-me {
+    top: 650px;
+    position: relative;
+    font-size: 55px;
+    font-family: "Open Sans Light";
+    color: #2b2b2b;
+  }
+
+  .about-me-text {
+    top: 650px;
+    width: 330px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 26px;
+    font-family: "Open Sans Light";
+    color: #2b2b2b;
+    transition: .2s;
+  }
+
+  .project-header {
+    position: relative;
+    margin: auto;
+    font-family: "Open Sans";
+    font-size: 55px;
+    color: #2b2b2b;
+  }
+
+  .pge-header {
+    position: relative;
+    margin: auto;
+    font-family: "Open Sans Light";
+    font-size: 36px;
+    width: 330px;
+    color: #2b2b2b;
+    top: 30px;
+  }
+
+  .pge-desc {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    width: 330px;
+    text-align: left;
+    font-family: "Open Sans Light";
+    font-size: 22px;
+    color: #2b2b2b;
+    padding-bottom: 50px;
+    transition: .2s;
+  }
+
+  .pge-content {
+    position: relative;
+    top: 60px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 0px 15px black;
+    transition: .2s;
+  }
+
+  .pge-content:hover {
+    transform: scale(1.1);
+  }
+
+  .scheduler-header {
+    position: relative;
+    margin: auto;
+    top: 120px;
+    font-family: "Open Sans Light";
+    font-size: 36px;
+    width: 330px;
+    color: #2b2b2b;
+  }
+
+  .scheduler-desc {
+    position: relative;
+    top: 140px;
+    margin: auto;
+    width: 330px;
+    text-align: left;
+    font-family: "Open Sans Light";
+    font-size: 22px;
+    color: #2b2b2b;
+    transition: .2s;
+  }
+
+  .video-responsive {
+    padding-right: 80%;
+    overflow: hidden;
+    top: 150px;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    transition: .2s;
+    margin-bottom: 170px;
+  }
+  
+  .video-responsive iframe {
+    height: 80%;
+    width: 80%;
+    top: 15px;
+    max-width: 800px;
+    position: absolute;
+    box-shadow: 0px 0px 15px black;
+  }
+
+  /*.construction {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 200px;
+    padding-bottom: 100px;
+    font-family: "Open Sans";
+    font-size: 40px;
+    color: #2b2b2b;
+  }*/
 }
 
 .resume:hover {
@@ -389,7 +693,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 50px;
+  font-size: 44px;
   /*font-family: "Backslash";
   color: #5a5a5a;
   text-shadow: 0px 0px 10px black;*/
