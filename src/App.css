@@ -478,7 +478,7 @@
   }
 
   .about-me {
-    top: 650px;
+    top: 670px;
     position: relative;
     font-size: 55px;
     font-family: "Open Sans Light";
@@ -486,7 +486,7 @@
   }
 
   .about-me-text {
-    top: 650px;
+    top: 680px;
     width: 330px;
     margin: auto;
     padding-top: 10px;
@@ -641,10 +641,11 @@
 }
 
 .App-header h2 {
-  font-size: 26px;
+  font-size: 22px;
   font-family: "Open Sans Light";
   color: #2b2b2b;
-  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 .App-header a {
