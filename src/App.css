@@ -178,6 +178,53 @@
     box-shadow: 0px 0px 15px black;
   }
 
+  .autodrive-header {
+    position: absolute;
+    top: 2200px;
+    left: 50px;
+    font-family: "Open Sans Light";
+    font-size: 40px;
+    color: #2b2b2b;
+  }
+
+  .autodrive-desc {
+    position: absolute;
+    top: 2270px;
+    left: 50px;
+    width: 750px;
+    text-align: justify;
+    font-family: "Open Sans Light";
+    font-size: 25px;
+    color: #2b2b2b;
+    transition: .2s;
+    padding-bottom: 100px;
+  }
+
+  .autodrive-content {
+    position: absolute;
+    top: 2200px;
+    right: 50px;
+    width: 40%;
+    max-width: 800px;
+    transition: .2s;
+  }
+
+  .autodrive-content:hover {
+    transform: scale(1.2);
+    translate: -70px;
+  }
+
+  /*
+  .line {
+    border-left: 2px solid black;
+    height: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 1100px;
+    animation: reveal 5s;
+  }
+  */
+
 }
 
 @media only screen and (min-width: 777px) and (max-width: 1500px) {
@@ -686,3 +733,25 @@ a:hover {
     margin-top: 0%;
   }
 }
+
+/*
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+
+  25% {
+    opacity: 1;
+    height: 500px;
+  }
+
+  50% {
+    height: 1000px;
+  }
+
+  100% {
+    height: 1200px;
+  }
+}
+*/

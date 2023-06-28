@@ -1,9 +1,11 @@
 import './App.css';
 import pfp from './newpfp.jpg';
 import resume from './resume_upd.jpg';
+import borealis from './borealis.png';
 import darkpge from './pge-assets/pge-dark-mode.PNG'
 import React from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
+import scroll from "./scroll";
 
 function App() {
   return (
@@ -55,6 +57,8 @@ function App() {
         <div className="gallery"></div>
       </div>
 
+      <div className="line"></div>
+
       <div className="project-header">Projects</div>
 
       <div className="pge-header">PG&E Energy Reducer</div>
@@ -80,8 +84,15 @@ function App() {
       </div>
       <YoutubeEmbed embedId="3d4iqolwGbY"/>
 
-      {/*<div className="construction">In Construction...</div>*/}
+      <div className="autodrive-header">SAE AutoDrive Challenge</div>
+      <div className="autodrive-desc">The AutoDrive Challenge™ II is a four-year competition coordinated by General Motors and the Society of Automotive Engineers (SAE) in which college teams create and test a Level 4 autonomous vehicle. RSE Students work to meet the requirements of each objective throughout the academic year until competition time in June. MTU’s team, Prometheus Borealis, took home a number of trophies in year one of the competition!
+      <br></br><br></br>
+      Role: Team Lead
+      <br></br><br></br>
+      </div>
+      <img src={borealis} className="autodrive-content" alt="borealis" />
 
+      
   </div>
   );
 }
