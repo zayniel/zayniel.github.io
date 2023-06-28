@@ -214,6 +214,7 @@
     translate: -70px;
   }
 
+  /*
   .line {
     border-left: 2px solid black;
     height: 1200px;
@@ -222,6 +223,7 @@
     top: 1100px;
     animation: reveal 5s;
   }
+  */
 
 }
 
@@ -732,6 +734,7 @@ a:hover {
   }
 }
 
+/*
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -751,3 +754,4 @@ a:hover {
     height: 1200px;
   }
 }
+*/
