@@ -65,7 +65,7 @@ function App() {
       <div className="pge-desc">
         The PG&E Energy Reducer is a web application for Pacific Gas & Electric customers that allows them to visualize their heat and electric consumption through easily readable and understandable graphical representations. The app also shows trends and recurring energy spikes and gives the customer advice to help reduce their energy consumption as well as their energy costs.
         <br></br> <br></br>
-        Role: Designer, Developer
+        <b>Role</b> - Designer, Developer
         <br></br><br></br>
         <a
         href="https://pge-app.sachinf.com"
@@ -79,7 +79,7 @@ function App() {
       <div className="scheduler-header">MTU Course Scheduler</div>
       <div className="scheduler-desc">A simplified class scheduling web application designed to match Michigan Technological Universities aesthetic. The purpose of this application is to give students a system that would assist in the selection of courses depending on their current year and degree requirements.
       <br></br><br></br>
-      Role: Designer, Developer, SCRUM Master
+      <b>Role</b> - Designer, Developer, SCRUM Master
       <br></br><br></br>
       </div>
       <YoutubeEmbed embedId="3d4iqolwGbY"/>
@@ -87,8 +87,14 @@ function App() {
       <div className="autodrive-header">SAE AutoDrive Challenge</div>
       <div className="autodrive-desc">The AutoDrive Challenge™ II is a four-year competition coordinated by General Motors and the Society of Automotive Engineers (SAE) in which college teams create and test a Level 4 autonomous vehicle. RSE Students work to meet the requirements of each objective throughout the academic year until competition time in June. MTU’s team, Prometheus Borealis, took home a number of trophies in year one of the competition!
       <br></br><br></br>
-      Role: Team Lead
+      <b>Role</b> - Team Member (Software Req.), Team Lead (Simulation)
       <br></br><br></br>
+      <a
+        href="https://rse.mtu.edu"
+        target="_blank"
+        rel="noopener noreferrer">
+          https://rse.mtu.edu
+        </a>
       </div>
       <img src={borealis} className="autodrive-content" alt="borealis" />
 
