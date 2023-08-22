@@ -1,7 +1,8 @@
 import './App.css';
 import pfp from './newpfp.jpg';
-import resume from './resume_upd.jpg';
+import resume from './Zayne_Resume.jpg';
 import borealis from './borealis.png';
+import yams from './yams.jpg'
 import darkpge from './pge-assets/pge-dark-mode.PNG'
 import React from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
@@ -74,7 +75,12 @@ function App() {
           pge-app.sachinf.com
         </a>
       </div>
+      <a
+        href='https://pge-app.sachinf.com'
+        target='_blank'
+        rel='noopener noreferrer'>
       <img src={darkpge} className="pge-content" alt="pgedark" />
+      </a>
 
       <div className="scheduler-header">MTU Course Scheduler</div>
       <div className="scheduler-desc">A simplified class scheduling web application designed to match Michigan Technological Universities aesthetic. The purpose of this application is to give students a system that would assist in the selection of courses depending on their current year and degree requirements.
@@ -93,11 +99,35 @@ function App() {
         href="https://rse.mtu.edu"
         target="_blank"
         rel="noopener noreferrer">
-          https://rse.mtu.edu
+          rse.mtu.edu
         </a>
       </div>
+      <a
+        href='https://rse.mtu.edu'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
       <img src={borealis} className="autodrive-content" alt="borealis" />
+      </a>
 
+      <div className="yams-header">YAMS (Team Website)</div>
+      <div className="yams-desc">YAMS is the name used for team creation by my friends and I in multiplayer video games. This website is intended as a way to log and show off our statistics as well as highlights of our favorite / most played characters in each game.
+      <br></br><br></br>
+      <b>Role</b> - Developer
+      <br></br><br></br>
+      <a
+        href="https://yams-six.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer">
+          yams-six.vercel.app
+        </a>
+      </div>
+      <a 
+        href='https://yams-six.vercel.app'
+        target='_blank'
+        rel='noopener noreferrer'>
+      <img src={yams} className="yams-content" alt="yams" />
+      </a>
       
   </div>
   );
