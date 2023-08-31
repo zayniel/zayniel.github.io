@@ -1,5 +1,5 @@
 import './App.css';
-import pfp from './newpfp.jpg';
+import pfp from './pfp.jpg';
 import resume from './Zayne_Resume.jpg';
 import borealis from './borealis.png';
 import yams from './yams.jpg'
