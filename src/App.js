@@ -3,6 +3,7 @@ import pfp from './pfp.jpg';
 import resume from './Zayne_Resume.jpg';
 import borealis from './borealis.png';
 import yams from './yams.jpg'
+import karma from './karma.jpg'
 import darkpge from './pge-assets/pge-dark-mode.PNG'
 import React from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
@@ -113,7 +114,7 @@ function App() {
       <div className="yams-header">YAMS (Team Website)</div>
       <div className="yams-desc">YAMS is the name used for team creation by my friends and I in multiplayer video games. This website is intended as a way to log and show off our statistics as well as highlights of our favorite / most played characters in each game.
       <br></br><br></br>
-      <b>Role</b> - Developer
+      <b>Role</b> - Creator, Developer
       <br></br><br></br>
       <a
         href="https://yams-six.vercel.app"
@@ -127,6 +128,25 @@ function App() {
         target='_blank'
         rel='noopener noreferrer'>
       <img src={yams} className="yams-content" alt="yams" />
+      </a>
+
+      <div className="karma-header">Karma Plushies</div>
+      <div className="karma-desc">Website intented to promote and sell custom handmade plushies.
+      <br></br><br></br>
+      <b>Role</b> - Creator, Developer
+      <br></br><br></br>
+      <a
+        href="https://karma-plushies.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer">
+          karma-plushies.vercel.app
+        </a>
+      </div>
+      <a 
+        href='https://karma-plushies.vercel.app'
+        target='_blank'
+        rel='noopener noreferrer'>
+      <img src={karma} className="karma-content" alt="karmaplushies" />
       </a>
       
   </div>
