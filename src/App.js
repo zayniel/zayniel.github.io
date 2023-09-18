@@ -1,7 +1,7 @@
 import './App.css';
 import pfp from './pfp.jpg';
-import resume from './Zayne_Resume.jpg';
-import borealis from './borealis.png';
+import resume from './zayne_resume.jpg';
+import borealis from './rse.jpg';
 import yams from './yams.jpg'
 import karma from './karma.jpg'
 import darkpge from './pge-assets/pge-dark-mode.PNG'
@@ -91,20 +91,20 @@ function App() {
       </div>
       <YoutubeEmbed embedId="3d4iqolwGbY"/>
 
-      <div className="autodrive-header">SAE AutoDrive Challenge</div>
-      <div className="autodrive-desc">The AutoDrive Challenge™ II is a four-year competition coordinated by General Motors and the Society of Automotive Engineers (SAE) in which college teams create and test a Level 4 autonomous vehicle. RSE Students work to meet the requirements of each objective throughout the academic year until competition time in June. MTU’s team, Prometheus Borealis, took home a number of trophies in year one of the competition!
+      <div className="autodrive-header">Robotic Systems Enterprise</div>
+      <div className="autodrive-desc">Informational website for the Robotic Systems Enterprise organization at Michigan Technological University.
       <br></br><br></br>
-      <b>Role</b> - Team Member (Software Req.), Team Lead (Simulation)
+      <b>Role</b> - Designer, Developer
       <br></br><br></br>
       <a
-        href="https://rse.mtu.edu"
+        href="https://rse-mtu.vercel.app"
         target="_blank"
         rel="noopener noreferrer">
-          rse.mtu.edu
+          rse-mtu.vercel.app
         </a>
       </div>
       <a
-        href='https://rse.mtu.edu'
+        href='https://rse-mtu.vercel.app'
         target='_blank'
         rel='noopener noreferrer'
       >
