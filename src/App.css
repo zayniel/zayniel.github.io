@@ -134,6 +134,7 @@ styling for large screens
     max-width: 800px;
     box-shadow: 0px 0px 15px black;
     transition: .2s;
+    border-radius: 15px;
   }
 
   .pge-content:hover {
@@ -179,6 +180,7 @@ styling for large screens
     max-width: 800px;
     position: absolute;
     box-shadow: 0px 0px 15px black;
+    border-radius: 15px;
   }
 
   .autodrive-header {
