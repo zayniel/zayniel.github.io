@@ -22,7 +22,6 @@ function App() {
     <header className="App-header">
         <p>
           <h1>Zayne Pepin</h1>
-          <h2>zayne.a.pepin@outlook.com</h2>
           <a
           href="https://www.linkedin.com/in/zayne-pepin-546a38220/"
           target="_blank"
@@ -43,9 +42,9 @@ function App() {
     </header>
 
 	  <div className="about-me">About Me</div>
-	  <div className="about-me-text">I am an aspiring software engineer with a focus on web development.
+	  <div className="about-me-text">I am a passionate Front End Software Engineer with an eye for accessible and aesthetically pleasing web interfaces.
     <br></br> <br></br>
-    I have several hobbies such as playing instruments, video games, watching movies, and various crafts.
+    I have several hobbies outside programming such as creating art, playing instruments, video games, and various crafts.
     <br></br> <br></br>
     Below you can find some of the projects I've been involved in.</div>
     
