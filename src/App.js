@@ -1,6 +1,6 @@
 import './App.css';
 import pfp from './pfp.jpg';
-import resume from './zayne_resume.jpg';
+import resume from './Resume2024.jpg';
 import borealis from './rse.jpg';
 import yams from './yams.jpg'
 import karma from './karma.jpg'
