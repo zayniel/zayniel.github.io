@@ -1,20 +1,18 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div class="project-card">
-  <div class="project-image">
-    <slot/>
-  </div>
-  <!--
+    <div class="project-image">
+      <slot />
+    </div>
+    <!--
   <div class="exit-to">
   <img
     width="77px"
     src="../assets/exit-to-app.svg" 
     alt="ExitTo" />
     </div>
-  -->
-  </div>
+  --></div>
 </template>
 
 <style lang="scss" scoped>
@@ -34,10 +32,9 @@
     align-items: center;
     width: 300px;
     height: 300px;
-    background: #E6E6E6;
+    background: #e6e6e6;
     cursor: pointer;
-    transition: transform 0.25s ease-in-out;
-
+    transition: transform 0.4s ease-in-out;
 
     :hover {
       transform: scale(1);

@@ -1,13 +1,11 @@
 <script setup>
-import ProjectCard from '../components/ProjectCard.vue';
+import ProjectCard from '../components/ProjectCard.vue'
 </script>
 
 <template>
   <div class="home-container">
     <div class="title-container">
-      <div class="title">
-        frontend developer.
-      </div>
+      <div class="title">frontend developer.</div>
       <div class="subtitle">
         building modern and intuitive interfaces with a passion for design.
       </div>
@@ -20,31 +18,27 @@ import ProjectCard from '../components/ProjectCard.vue';
       </div>
     </div>
     <div class="hero-container">
-      <img 
-        src="../assets/hero-image.png" 
-        alt="Hero Image"
-        class="hero-image" />
-      <img
-        src="../assets/ink-1.png"
-        alt="Ink 1" 
-        class="ink-1"/>
+      <img src="../assets/hero-image.png" alt="Hero Image" class="hero-image" />
+      <img src="../assets/ink-1.png" alt="Ink 1" class="ink-1" />
     </div>
   </div>
   <div class="latest-container">
     <div class="latest-title-container">
-      <div class="latest-title">
-        latest projects.
-      </div>
+      <div class="latest-title">latest projects.</div>
       <router-link to="/portfolio" class="see-more">see more</router-link>
     </div>
     <div class="spacer" />
     <div class="project-cards">
       <a href="https://skillsdojo.24g.com" target="_blank">
         <ProjectCard>
-          <img src="../assets/skills-dojo.png" alt="Project"/>
+          <img src="../assets/skills-dojo.png" alt="Project" />
         </ProjectCard>
       </a>
-      <ProjectCard />
+      <a href="https://rse-mtu.vercel.app" target="_blank">
+        <ProjectCard>
+          <img width="220px" src="../assets/rse-logo.png" alt="Project" />
+        </ProjectCard>
+      </a>
       <ProjectCard />
     </div>
   </div>
@@ -140,7 +134,9 @@ import ProjectCard from '../components/ProjectCard.vue';
   overflow: hidden;
   position: relative;
   background-image: url('../assets/ink-2.png'), url('../assets/ink-3.png');
-  background-position: left -223px center, right -223px center; /* Adjust based on image width */
+  background-position:
+    left -223px center,
+    right -223px center; /* Adjust based on image width */
   background-repeat: no-repeat;
   background-size: 634px auto; /* Adjust based on image size */
 
