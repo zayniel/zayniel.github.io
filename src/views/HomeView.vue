@@ -31,25 +31,39 @@ import ProjectCard from '../components/ProjectCard.vue'
     <div class="project-cards">
       <a href="https://skillsdojo.24g.com" target="_blank">
         <ProjectCard>
-          <img src="../assets/skills-dojo.png" alt="Project" />
+          <template v-slot:title>Skills Dojo</template>
+          <template v-slot:image>
+            <img src="../assets/skills-dojo.png" alt="Project" />
+          </template>
         </ProjectCard>
       </a>
       <a href="https://rse-mtu.vercel.app" target="_blank">
         <ProjectCard>
-          <img width="220px" src="../assets/rse-logo.png" alt="Project" />
+          <template v-slot:title>RSE Recruitment</template>
+          <template v-slot:image>
+            <img width="220px" src="../assets/rse-logo.png" alt="Project" />
+          </template>
         </ProjectCard>
       </a>
-      <ProjectCard />
+      <router-link to="/portfolio">
+        <ProjectCard>
+          <template v-slot:title>NRG Reducer</template>
+          <template v-slot:image>
+            <img width="220px" src="../assets/pge-logo.png" alt="Project" />
+          </template>
+        </ProjectCard>
+      </router-link>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .home-container {
   display: flex;
-  justify-content: space-around;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  justify-content: center;
+  //justify-content: space-around;
+  // padding-left: 10rem;
+  // padding-right: 10rem;
   align-items: center;
 }
 
@@ -127,16 +141,17 @@ import ProjectCard from '../components/ProjectCard.vue'
 
 .latest-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  // justify-content: space-around;
   height: 722px;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  // padding-left: 10rem;
+  // padding-right: 10rem;
   overflow: hidden;
   position: relative;
-  background-image: url('../assets/ink-2.png'), url('../assets/ink-3.png');
+  background-image: url('../assets/ink-2.png'), url('../assets/ink-2.png');
   background-position:
-    left -223px center,
-    right -223px center; /* Adjust based on image width */
+    left -300px center,
+    right -300px center; /* Adjust based on image width */
   background-repeat: no-repeat;
   background-size: 634px auto; /* Adjust based on image size */
 
@@ -181,6 +196,15 @@ import ProjectCard from '../components/ProjectCard.vue'
     display: flex;
     top: 250px;
     gap: 50px;
+
+    a {
+      text-decoration: none;
+      color: #7a7a7a;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 </style>

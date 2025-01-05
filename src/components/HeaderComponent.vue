@@ -1,13 +1,8 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div class="header-container">
-    <router-link class="name" to="/">
-
-      ZP | zaynepepin
-
-    </router-link>
+    <router-link class="name" to="/"> ZP | zaynepepin </router-link>
     <div class="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/portfolio">Portfolio</router-link>
@@ -16,27 +11,17 @@
       <router-link to="/contact">Contact</router-link>
     </div>
     <div class="socials">
-      <a 
-        href="https://www.linkedin.com/in/zayne-pepin-546a38220/" 
-        target="_blank">
-        <img 
-          width="47px"
-          src="../assets/linkedin-2.svg" 
-          alt="LinkedIn" />
+      <a href="https://www.linkedin.com/in/zayne-pepin-546a38220/" target="_blank">
+        <img width="47px" src="../assets/linkedin-2.svg" alt="LinkedIn" />
       </a>
-      <a 
-        href="https://github.com/zayniel" 
-        target="_blank">
-        <img 
-          width="47px"
-          src="../assets/github.svg" 
-          alt="GitHub" />
+      <a href="https://github.com/zayniel" target="_blank">
+        <img width="47px" src="../assets/github.svg" alt="GitHub" />
       </a>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .header-container {
   position: relative;
   display: flex;
@@ -46,15 +31,15 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .name {
   font-family: 'Nova Cut';
-	color: #444444;
-	font-weight: 700;
-	font-size: 30px;
-	text-align: left;
+  color: #444444;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: left;
   text-decoration: none;
   cursor: pointer;
 }

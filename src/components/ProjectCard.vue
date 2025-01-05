@@ -1,21 +1,40 @@
 <script setup></script>
 
 <template>
-  <div class="project-card">
-    <div class="project-image">
-      <slot />
+  <div class="container">
+    <div class="project-title">
+      <slot name="title"></slot>
     </div>
-    <!--
+    <div class="project-card">
+      <div class="project-image">
+        <slot name="image"></slot>
+      </div>
+      <!--
   <div class="exit-to">
   <img
     width="77px"
     src="../assets/exit-to-app.svg" 
     alt="ExitTo" />
     </div>
-  --></div>
+  -->
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.project-title {
+  font-family: 'Space Mono';
+  color: #444444;
+  font-size: 20px;
+}
+
 .project-card {
   position: relative;
   display: flex;
