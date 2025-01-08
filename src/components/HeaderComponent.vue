@@ -4,11 +4,11 @@
   <div class="header-container">
     <router-link class="name" to="/"> ZP | zaynepepin </router-link>
     <div class="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/portfolio">Portfolio</router-link>
-      <router-link to="/about">About Me</router-link>
-      <router-link to="/resume">Resume</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <router-link to="/">home</router-link>
+      <router-link to="/portfolio">portfolio</router-link>
+      <router-link to="/about">about me</router-link>
+      <router-link to="/resume">resume</router-link>
+      <router-link to="/contact">contact</router-link>
     </div>
     <div class="socials">
       <a href="https://www.linkedin.com/in/zayne-pepin-546a38220/" target="_blank">
@@ -23,7 +23,8 @@
 
 <style lang="scss" scoped>
 .header-container {
-  position: relative;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,7 +32,9 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
+  background-color: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  z-index: 99999;
 }
 
 .name {

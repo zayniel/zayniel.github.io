@@ -29,25 +29,25 @@ import ProjectCard from '../components/ProjectCard.vue'
     </div>
     <div class="spacer" />
     <div class="project-cards">
-      <a href="https://skillsdojo.24g.com" target="_blank">
+      <router-link to="/portfolio">
         <ProjectCard>
-          <template v-slot:title>Skills Dojo</template>
+          <template v-slot:title>skills dojo</template>
           <template v-slot:image>
             <img src="../assets/skills-dojo.png" alt="Project" />
           </template>
         </ProjectCard>
-      </a>
-      <a href="https://rse-mtu.vercel.app" target="_blank">
+      </router-link>
+      <router-link to="/portfolio#rse-recruitment">
         <ProjectCard>
-          <template v-slot:title>RSE Recruitment</template>
+          <template v-slot:title>rse recruitment</template>
           <template v-slot:image>
             <img width="220px" src="../assets/rse-logo.png" alt="Project" />
           </template>
         </ProjectCard>
-      </a>
-      <router-link to="/portfolio">
+      </router-link>
+      <router-link to="/portfolio#nrg-reducer">
         <ProjectCard>
-          <template v-slot:title>NRG Reducer</template>
+          <template v-slot:title>nrg reducer</template>
           <template v-slot:image>
             <img width="220px" src="../assets/pge-logo.png" alt="Project" />
           </template>
@@ -55,154 +55,212 @@ import ProjectCard from '../components/ProjectCard.vue'
       </router-link>
     </div>
   </div>
+  <!-- remove once mobile is ready -->
+  <div class="view">
+    <div class="construction-container">
+      <div class="title">mobile under construction</div>
+      <div class="subtitle">check it out on desktop!</div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.home-container {
-  display: flex;
-  justify-content: center;
-  //justify-content: space-around;
-  // padding-left: 10rem;
-  // padding-right: 10rem;
-  align-items: center;
-}
-
-.title-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
-  .title {
-    font-family: 'Nova Cut';
-    color: #444444;
-    font-weight: 700;
-    font-size: 54px;
-    width: 480px;
-  }
-
-  .subtitle {
-    font-family: 'Space Mono';
-    color: #7a7a7a;
-    font-size: 20px;
-    width: 374px;
-  }
-
-  .language-tags {
+// Desktop
+@media only screen and (min-width: 1370px) {
+  .home-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 319px;
-    cursor: default;
-
-    .tag {
-      color: white;
-      font-family: 'Space Mono';
-      font-size: 24px;
-      padding: 8px 16px;
-      border-radius: 8px;
-      text-align: center;
-      white-space: nowrap;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
-    }
-
-    .color-1 {
-      background-color: #232323;
-    }
-
-    .color-2 {
-      background-color: #353535;
-    }
-
-    .color-3 {
-      background-color: #515151;
-    }
-  }
-}
-
-.hero-container {
-  position: relative;
-  overflow: hidden;
-  height: 600px;
-
-  .hero-image {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    width: 506px;
+    justify-content: center;
+    align-items: center;
   }
 
-  .ink-1 {
-    position: relative;
-    z-index: 1;
-    width: 650px;
-  }
-}
-
-.latest-container {
-  display: flex;
-  justify-content: center;
-  // justify-content: space-around;
-  height: 722px;
-  // padding-left: 10rem;
-  // padding-right: 10rem;
-  overflow: hidden;
-  position: relative;
-  background-image: url('../assets/ink-2.png'), url('../assets/ink-2.png');
-  background-position:
-    left -300px center,
-    right -300px center; /* Adjust based on image width */
-  background-repeat: no-repeat;
-  background-size: 634px auto; /* Adjust based on image size */
-
-  .latest-title {
-    font-family: 'Nova Cut';
-    color: #444444;
-    font-weight: bold;
-    font-size: 50px;
-    width: 480px;
-  }
-
-  .see-more {
-    position: relative;
-    right: 125px;
-    font-family: 'Space Mono';
-    color: #7a7a7a;
-    font-size: 20px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .latest-title-container {
-    position: relative;
+  .title-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    top: 80px;
-    height: 95px;
-    line-height: 45px;
-    z-index: 1;
-  }
+    gap: 30px;
 
-  .spacer {
-    width: 650px;
-  }
+    .title {
+      font-family: 'Nova Cut';
+      color: #444444;
+      font-weight: 700;
+      font-size: 54px;
+      width: 480px;
+    }
 
-  .project-cards {
-    position: absolute;
-    display: flex;
-    top: 250px;
-    gap: 50px;
-
-    a {
-      text-decoration: none;
+    .subtitle {
+      font-family: 'Space Mono';
       color: #7a7a7a;
+      font-size: 20px;
+      width: 374px;
+    }
+
+    .language-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 319px;
+      cursor: default;
+
+      .tag {
+        color: white;
+        font-family: 'Space Mono';
+        font-size: 24px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        text-align: center;
+        white-space: nowrap;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      .color-1 {
+        background-color: #232323;
+      }
+
+      .color-2 {
+        background-color: #353535;
+      }
+
+      .color-3 {
+        background-color: #515151;
+      }
+    }
+  }
+
+  .hero-container {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+
+    .hero-image {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      width: 506px;
+    }
+
+    .ink-1 {
+      position: relative;
+      z-index: 1;
+      width: 650px;
+    }
+  }
+
+  .latest-container {
+    display: flex;
+    justify-content: center;
+    // justify-content: space-around;
+    height: 722px;
+    // padding-left: 10rem;
+    // padding-right: 10rem;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../assets/ink-2.png'), url('../assets/ink-2.png');
+    background-position:
+      left -300px center,
+      right -300px center; /* Adjust based on image width */
+    background-repeat: no-repeat;
+    background-size: 634px auto; /* Adjust based on image size */
+
+    .latest-title {
+      font-family: 'Nova Cut';
+      color: #444444;
+      font-weight: bold;
+      font-size: 50px;
+      width: 480px;
+    }
+
+    .see-more {
+      position: relative;
+      right: 125px;
+      font-family: 'Space Mono';
+      color: #7a7a7a;
+      font-size: 20px;
+      text-decoration: none;
 
       &:hover {
         text-decoration: underline;
+      }
+    }
+
+    .latest-title-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      top: 80px;
+      height: 95px;
+      line-height: 45px;
+      z-index: 1;
+    }
+
+    .spacer {
+      width: 650px;
+    }
+
+    .project-cards {
+      position: absolute;
+      display: flex;
+      top: 250px;
+      gap: 50px;
+
+      a {
+        text-decoration: none;
+        color: #7a7a7a;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .view {
+    display: none;
+  }
+}
+
+// Mobile
+// Currently WIP so only show "under construction" message
+@media only screen and (max-width: 1370px) {
+  .home-container {
+    display: none;
+  }
+
+  .title-container {
+    display: none;
+  }
+
+  .hero-container {
+    display: none;
+  }
+
+  .latest-container {
+    display: none;
+  }
+
+  .view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .construction-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+
+      .title {
+        font-family: 'Nova Cut';
+        font-size: 25px;
+        font-weight: 700;
+        color: #444444;
+      }
+
+      .subtitle {
+        font-family: 'Space Mono';
+        font-size: 20px;
+        color: #4a4a4a;
       }
     }
   }

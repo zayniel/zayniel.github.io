@@ -5,17 +5,25 @@
     <div class="project">
       <div class="project-info">
         <div class="header">
-          <!-- slot these later -->
-          <div class="title">skills dojo.</div>
-          <div class="subtitle">role : lead frontend developer</div>
+          <div class="title">
+            <slot name="project-title"></slot>
+          </div>
+          <div class="subtitle">
+            <slot name="project-subtitle"></slot>
+          </div>
         </div>
         <div class="body">
-          web application which leverages AWS Bedrock AI to fulfill various employee training roles.
-          These roles include Ask an Expert, Customer Roleplay, and Flashcards which all utilize
-          generative AI to give employees a powerful learning tool and experience.
+          <slot name="project-body"></slot>
         </div>
       </div>
-      <div class="img-placeholder"></div>
+      <div class="project-content-container">
+        <div class="image-container">
+          <slot name="project-content"></slot>
+        </div>
+        <div class="external-link">
+          <slot name="link"></slot>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -23,26 +31,24 @@
 <style lang="scss" scoped>
 .container {
   display: flex;
-  height: 600px;
+  height: 550px;
   justify-content: center;
   align-items: center;
 
   .project {
     display: flex;
-    gap: 100px;
+    gap: 60px;
     justify-content: center;
-    align-items: flex-start;
 
-    .img-placeholder {
-      width: 670px;
-      height: 339px;
-      background-color: black;
+    .image-container {
+      width: 700px;
     }
 
     .project-info {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      width: 450px;
 
       .header {
         .title {
@@ -64,6 +70,19 @@
         font-family: 'Space Mono';
         font-size: 20px;
         color: #7a7a7a;
+      }
+    }
+
+    .project-content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      align-self: flex-end;
+
+      .external-link {
+        font-family: 'Space Mono';
+        color: #444444;
+        font-size: 20px;
       }
     }
   }
