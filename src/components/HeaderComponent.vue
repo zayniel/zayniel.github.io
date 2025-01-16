@@ -111,15 +111,17 @@ function toggleMenu() {
   }
 
   .menu {
-    position: sticky;
+    position: fixed;
     top: 112px;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
-    z-index: 1;
-    background-color: black;
-    height: 200px;
+    z-index: 3;
+    background-color: #ebebeb;
+    height: 100vh;
     transform: translateY(-100%); /* Initially hidden by moving out of view */
-    transition: transform 0.3s ease; /* Smooth transition for toggling */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for toggling */
   }
 
   .menu.active {

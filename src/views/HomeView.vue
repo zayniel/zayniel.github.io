@@ -55,23 +55,21 @@ import ProjectCard from '../components/ProjectCard.vue'
       </router-link>
     </div>
   </div>
-  <!-- remove once mobile is ready -->
+  <!-- remove once mobile is ready 
   <div class="view">
     <div class="construction-container">
       <div class="title">mobile under construction</div>
       <div class="subtitle">check it out on desktop!</div>
     </div>
   </div>
+  -->
 </template>
 
 <style lang="scss" scoped>
-// Desktop
-@media only screen and (min-width: 1370px) {
-  .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .title-container {
     display: flex;
@@ -129,7 +127,7 @@ import ProjectCard from '../components/ProjectCard.vue'
   .hero-container {
     position: relative;
     overflow: hidden;
-    height: 600px;
+    // height: 600px;
 
     .hero-image {
       position: absolute;
@@ -143,6 +141,13 @@ import ProjectCard from '../components/ProjectCard.vue'
       z-index: 1;
       width: 650px;
     }
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 1370px) {
+  .hero-container {
+    height: 600px;
   }
 
   .latest-container {
@@ -223,19 +228,84 @@ import ProjectCard from '../components/ProjectCard.vue'
 // Currently WIP so only show "under construction" message
 @media only screen and (max-width: 1370px) {
   .home-container {
-    display: none;
-  }
+    flex-direction: column-reverse;
+    overflow: hidden;
+    gap: 30px;
 
-  .title-container {
-    display: none;
-  }
+    .title-container {
+      max-width: 350px;
+      position: relative;
 
-  .hero-container {
-    display: none;
+      .title {
+        font-size: 52px;
+      }
+
+      .subtitle {
+        font-size: 19px;
+      }
+    }
+
+    .hero-container {
+      .hero-image {
+        width: 300px;
+      }
+
+      .ink-1 {
+        width: 320px;
+      }
+    }
   }
 
   .latest-container {
-    display: none;
+    gap: 20px;
+    top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .latest-title-container {
+      display: flex;
+      flex-direction: column;
+
+      .latest-title {
+        font-family: 'Nova Cut';
+        color: #444444;
+        font-weight: bold;
+        font-size: 50px;
+        // width: 480px;
+      }
+
+      .see-more {
+        position: relative;
+        // right: 125px;
+        font-family: 'Space Mono';
+        color: #7a7a7a;
+        font-size: 20px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .project-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 50px;
+
+      a {
+        text-decoration: none;
+        color: #7a7a7a;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .view {
