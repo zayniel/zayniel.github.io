@@ -273,8 +273,8 @@ import ProjectCard from '../components/ProjectCard.vue'
         font-family: 'Nova Cut';
         color: #444444;
         font-weight: bold;
-        font-size: 50px;
-        // width: 480px;
+        font-size: 52px;
+        max-width: 350px;
       }
 
       .see-more {
