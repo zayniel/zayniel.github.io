@@ -29,6 +29,7 @@
 </template>
 
 <style lang="scss" scoped>
+// Desktop (default)
 .container {
   display: flex;
   height: 550px;
@@ -83,6 +84,45 @@
         font-family: 'Space Mono';
         color: #444444;
         font-size: 20px;
+      }
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 1370px) {
+  .container {
+    display: flex;
+    height: auto;
+
+    .project {
+      flex-direction: column;
+      gap: 20px;
+      max-width: 350px;
+
+      .project-info {
+        width: auto;
+
+        .header {
+          .title {
+            font-size: 52px;
+          }
+
+          .subtitle {
+            font-size: 18px;
+          }
+        }
+
+        .body {
+          width: auto;
+          font-size: 16px;
+        }
+      }
+
+      .project-content-container {
+        .image-container {
+          max-width: 350px;
+        }
       }
     }
   }

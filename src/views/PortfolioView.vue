@@ -53,52 +53,57 @@ import PortfolioProject from '../components/PortfolioProject.vue'
       </template>
     </PortfolioProject>
   </div>
-  <!-- remove once mobile is ready -->
+  <!-- remove once mobile is ready
   <div class="construction-view">
     <div class="construction-container">
       <div class="title">mobile under construction</div>
       <div class="subtitle">check it out on desktop!</div>
     </div>
   </div>
+   -->
 </template>
 
 <style lang="scss" scoped>
-@media only screen and (min-width: 1370px) {
-  .view {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+// Desktop (default)
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 
-    .spacer {
-      position: relative;
-      top: -100px;
-      height: 0;
-    }
+  .spacer {
+    position: relative;
+    top: -100px;
+    height: 0;
+  }
 
-    .external-link {
-      a {
-        text-decoration: none;
-        color: #444444;
+  .external-link {
+    a {
+      text-decoration: none;
+      color: #444444;
 
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
-
-  .construction-view {
-    display: none;
-  }
 }
 
+.construction-view {
+  display: none;
+}
+
+// Mobile
 @media only screen and (max-width: 1370px) {
   .view {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
-
+  /*
   .construction-view {
     display: flex;
     justify-content: center;
@@ -125,5 +130,6 @@ import PortfolioProject from '../components/PortfolioProject.vue'
       }
     }
   }
+  */
 }
 </style>
