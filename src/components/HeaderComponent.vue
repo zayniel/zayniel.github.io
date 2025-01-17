@@ -1,4 +1,39 @@
 <script setup>
+import { ref } from 'vue'
+import HomeIcon from '../assets/home.svg'
+import PortfolioIcon from '../assets/portfolio.svg'
+import UserIcon from '../assets/user.svg'
+import ResumeIcon from '../assets/resume.svg'
+import ContactIcon from '../assets/contact.svg'
+
+const menuItems = [
+  {
+    icon: HomeIcon,
+    title: 'home',
+    route: '/'
+  },
+  {
+    icon: PortfolioIcon,
+    title: 'portfolio',
+    route: '/portfolio'
+  },
+  {
+    icon: UserIcon,
+    title: 'about me',
+    route: '/about'
+  },
+  {
+    icon: ResumeIcon,
+    title: 'resume',
+    route: '/resume'
+  },
+  {
+    icon: ContactIcon,
+    title: 'contact',
+    route: '/contact'
+  }
+]
+
 function toggleMenu() {
   const menu = document.querySelector('.menu')
   menu.classList.toggle('active')
@@ -27,7 +62,20 @@ function toggleMenu() {
       <img width="30px" src="../assets/menu-burger.svg" alt="Menu" @click="toggleMenu()" />
     </div>
   </div>
-  <div class="menu"></div>
+  <div class="menu">
+    <div v-for="(item, index) in menuItems" :key="index">
+      <div class="menu-item">
+        <!--
+        <img :src="item.icon" :alt="item.title" width="40px" />
+        -->
+        <router-link :to="item.route" @click="toggleMenu()">
+          <div class="item-title">
+            {{ item.title }}
+          </div>
+        </router-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -117,11 +165,34 @@ function toggleMenu() {
     right: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
     z-index: 3;
     background-color: #ebebeb;
     height: 100vh;
     transform: translateY(-100%); /* Initially hidden by moving out of view */
     transition: transform 0.5s ease-in-out; /* Smooth transition for toggling */
+
+    .menu-item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .item-title {
+        font-family: 'Space Mono';
+        font-size: 22px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #444444;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .menu.active {
