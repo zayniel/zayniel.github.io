@@ -33,7 +33,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
         hosted website! go huskies!
       </template>
       <template v-slot:project-content>
-        <img src="../assets/rse.jpg" width="100%" />
+        <img class="project-content" src="../assets/rse.jpg" width="100%" />
       </template>
       <template v-slot:link class="external-link">
         <a href="https://rse-mtu.vercel.app" target="_blank">check it out &#x2197;</a>
@@ -49,7 +49,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
         trends and gives advice to the user on how to cut down their energy consumption.
       </template>
       <template v-slot:project-content>
-        <img src="../assets/nrg-reducer.png" width="100%" />
+        <img class="project-content" src="../assets/nrg-reducer.png" width="100%" />
       </template>
     </PortfolioProject>
     <div class="spacer" id="mtu-scheduler" />
@@ -78,7 +78,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
         favorite / most played characters in each game.
       </template>
       <template v-slot:project-content>
-        <img src="../assets/yams.jpg" width="100%" />
+        <img class="project-content" src="../assets/yams.jpg" width="100%" />
       </template>
       <template v-slot:link class="external-link">
         <a href="https://yams-six.vercel.app" target="_blank">check it out &#x2197;</a>
@@ -92,7 +92,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
         website used to promote and sell my girlfriend's custom handmade plushies!
       </template>
       <template v-slot:project-content>
-        <img src="../assets/karma-plushies.jpg" width="100%" />
+        <img class="project-content" src="../assets/karma-plushies.jpg" width="100%" />
       </template>
       <template v-slot:link class="external-link">
         <a href="https://karma-plushies.vercel.app" target="_blank">check it out &#x2197;</a>
@@ -126,6 +126,12 @@ import PortfolioProject from '../components/PortfolioProject.vue'
         text-decoration: underline;
       }
     }
+  }
+
+  .project-content {
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
 }
 
