@@ -6,7 +6,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
   <div class="view">
     <PortfolioProject>
       <template v-slot:project-title>skills dojo.</template>
-      <template v-slot:project-subtitle>lead frontend developer</template>
+      <template v-slot:project-subtitle>lead frontend developer / full stack</template>
       <template v-slot:project-body
         >web application which leverages aws bedrock ai to fulfill various employee training roles.
         these roles include ask an expert, customer roleplay, and flashcards which all utilize
@@ -25,7 +25,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
     <div class="spacer" id="rse-recruitment" />
     <PortfolioProject>
       <template v-slot:project-title>rse recruitment.</template>
-      <template v-slot:project-subtitle>designer, lone developer</template>
+      <template v-slot:project-subtitle>designer / frontend developer</template>
       <template v-slot:project-body>
         informational website for the robotic systems enterprise organization at michigan
         technological university. it's purpose is to give prospective student members information
@@ -42,7 +42,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
     <div class="spacer" id="nrg-reducer" />
     <PortfolioProject>
       <template v-slot:project-title>nrg reducer.</template>
-      <template v-slot:project-subtitle>frontend developer</template>
+      <template v-slot:project-subtitle>designer / full stack developer</template>
       <template v-slot:project-body>
         web application for pacific gas & electric customers that allows them to visualize their
         heat and electric consumption through readable graphical representations. the app shows
@@ -52,15 +52,53 @@ import PortfolioProject from '../components/PortfolioProject.vue'
         <img src="../assets/nrg-reducer.png" width="100%" />
       </template>
     </PortfolioProject>
+    <div class="spacer" id="mtu-scheduler" />
+    <PortfolioProject>
+      <template v-slot:project-title>mtu course scheduler.</template>
+      <template v-slot:project-subtitle>designer / developer / scrum master</template>
+      <template v-slot:project-body
+        >simplified class scheduling web application designed to match michigan technological
+        universities theme. this app gives students a system that assists in the selection of
+        courses depending on their current year and degree requirements.</template
+      >
+      <template v-slot:project-content>
+        <video controls width="100%">
+          <source src="../assets/course-scheduler.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </template>
+    </PortfolioProject>
+    <div class="spacer" id="yams-site" />
+    <PortfolioProject>
+      <template v-slot:project-title>yams.</template>
+      <template v-slot:project-subtitle>designer / frontend developer</template>
+      <template v-slot:project-body>
+        yams is the name used for team creation by my friends and i in multiplayer video games. this
+        website is intended as a way to log and show off our statistics as well as highlights of our
+        favorite / most played characters in each game.
+      </template>
+      <template v-slot:project-content>
+        <img src="../assets/yams.jpg" width="100%" />
+      </template>
+      <template v-slot:link class="external-link">
+        <a href="https://yams-six.vercel.app" target="_blank">check it out &#x2197;</a>
+      </template>
+    </PortfolioProject>
+    <div class="spacer" id="karma-plushies" />
+    <PortfolioProject>
+      <template v-slot:project-title>karma plushies.</template>
+      <template v-slot:project-subtitle>designer / frontend developer</template>
+      <template v-slot:project-body>
+        website used to promote and sell my girlfriend's custom handmade plushies!
+      </template>
+      <template v-slot:project-content>
+        <img src="../assets/karma-plushies.jpg" width="100%" />
+      </template>
+      <template v-slot:link class="external-link">
+        <a href="https://karma-plushies.vercel.app" target="_blank">check it out &#x2197;</a>
+      </template>
+    </PortfolioProject>
   </div>
-  <!-- remove once mobile is ready
-  <div class="construction-view">
-    <div class="construction-container">
-      <div class="title">mobile under construction</div>
-      <div class="subtitle">check it out on desktop!</div>
-    </div>
-  </div>
-   -->
 </template>
 
 <style lang="scss" scoped>
@@ -71,6 +109,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
   gap: 10px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 80px;
 
   .spacer {
     position: relative;
