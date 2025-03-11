@@ -2,6 +2,11 @@
 
 <template>
   <div class="view">
+    <!--
+    <div class="title-container">
+      <div class="title">about me.</div>
+    </div>
+    -->
     <div class="construction-container">
       <div class="title">under construction</div>
       <div class="subtitle">check back later!</div>
@@ -15,6 +20,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-family: 'Nova Cut';
+      font-size: 52px;
+      font-weight: 700;
+      color: #444444;
+    }
 
     .construction-container {
       display: flex;
@@ -47,6 +62,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .title {
+      font-family: 'Nova Cut';
+      font-size: 25px;
+      font-weight: 700;
+      color: #444444;
+    }
 
     .construction-container {
       display: flex;
