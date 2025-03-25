@@ -2,9 +2,14 @@
 
 <template>
   <div class="view">
+    <!--
     <div class="construction-container">
       <div class="title">under construction</div>
       <div class="subtitle">check back later!</div>
+    </div>
+    -->
+    <div class="resume-container">
+      <img src="../assets/Resume.jpg" />
     </div>
   </div>
 </template>
@@ -16,6 +21,18 @@
     justify-content: center;
     align-items: center;
 
+    .resume-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 1000px;
+      }
+    }
+
+    /*
     .construction-container {
       display: flex;
       flex-direction: column;
@@ -39,6 +56,7 @@
         color: #4a4a4a;
       }
     }
+    */
   }
 }
 
@@ -48,6 +66,18 @@
     justify-content: center;
     align-items: center;
 
+    .resume-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    /*
     .construction-container {
       display: flex;
       flex-direction: column;
@@ -68,6 +98,7 @@
         color: #4a4a4a;
       }
     }
+    */
   }
 }
 </style>
