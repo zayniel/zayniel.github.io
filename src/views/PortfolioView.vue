@@ -110,6 +110,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
   justify-content: center;
   align-items: center;
   padding-bottom: 80px;
+  margin-top: 24px;
 
   .spacer {
     position: relative;
@@ -146,7 +147,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
     flex-direction: column;
     gap: 30px;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
   }
   /*
   .construction-view {
