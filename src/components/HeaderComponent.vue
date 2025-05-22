@@ -90,7 +90,7 @@ function toggleMenu() {
   padding-right: 1rem;
   padding-bottom: 2rem;
   background-color: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   z-index: 99999;
 
   .name {

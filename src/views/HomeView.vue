@@ -70,6 +70,7 @@ import ProjectCard from '../components/ProjectCard.vue'
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 15px #0000001a;
 
   .title-container {
     display: flex;
