@@ -76,6 +76,7 @@ import ProjectCard from '../components/ProjectCard.vue'
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 14px;
 
     .title {
       font-family: 'Nova Cut';
@@ -236,6 +237,7 @@ import ProjectCard from '../components/ProjectCard.vue'
     .title-container {
       max-width: 350px;
       position: relative;
+      margin-bottom: 64px;
 
       .title {
         font-size: 52px;
