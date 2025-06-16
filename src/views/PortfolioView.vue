@@ -1,9 +1,28 @@
 <script setup>
 import PortfolioProject from '../components/PortfolioProject.vue'
+import { onMounted, onUnmounted } from 'vue';
+import { initProgressBar } from '../progress.js';
+
+let cleanupProgressBar;
+
+onMounted(() => {
+  cleanupProgressBar = initProgressBar();
+})
+
+onUnmounted(() => {
+  if(cleanupProgressBar) {
+    cleanupProgressBar();
+  }
+})
 </script>
 
 <template>
   <div class="view">
+      <progress value="0" id="progressBar">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
     <PortfolioProject>
       <template v-slot:project-title>skills dojo.</template>
       <template v-slot:project-subtitle>lead frontend developer / full stack</template>
@@ -19,7 +38,7 @@ import PortfolioProject from '../components/PortfolioProject.vue'
         </video>
       </template>
       <template v-slot:link class="external-link">
-        <a href="https://skillsdojo.24g.com" target="_blank">learn more &#x2197;</a>
+        <a href="https://www.drive-x.io/" target="_blank">learn more &#x2197;</a>
       </template>
     </PortfolioProject>
     <div class="spacer" id="rse-recruitment" />
@@ -103,6 +122,60 @@ import PortfolioProject from '../components/PortfolioProject.vue'
 
 <style lang="scss" scoped>
 // Desktop (default)
+#progressBar {
+  // Position
+  position: fixed;
+  top: 112px;
+  left: 0;
+
+  // Dimensions
+  width: 100%;
+  height: 7px;
+
+  // Reset appearance
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  // Remove default border
+  border: none;
+
+  // Bar container
+  background-color: transparent;
+
+  // Bar color
+  color: #444444;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #444444;
+}
+
+progress::-moz-progress-bar {
+  background-color: #444444;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
 .view {
   display: flex;
   flex-direction: column;
@@ -142,6 +215,10 @@ import PortfolioProject from '../components/PortfolioProject.vue'
 
 // Mobile
 @media only screen and (max-width: 1370px) {
+  #progressBar {
+    height: 3px;
+  }
+
   .view {
     display: flex;
     flex-direction: column;
@@ -149,33 +226,5 @@ import PortfolioProject from '../components/PortfolioProject.vue'
     padding-top: 20px;
     padding-bottom: 90px;
   }
-  /*
-  .construction-view {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .construction-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 500px;
-
-      .title {
-        font-family: 'Nova Cut';
-        font-size: 25px;
-        font-weight: 700;
-        color: #444444;
-      }
-
-      .subtitle {
-        font-family: 'Space Mono';
-        font-size: 20px;
-        color: #4a4a4a;
-      }
-    }
-  }
-  */
 }
 </style>

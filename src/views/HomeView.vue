@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard.vue'
 <template>
   <div class="home-container">
     <div class="title-container">
-      <div class="title">frontend developer.</div>
+      <div class="title">web developer.</div>
       <div class="subtitle">
         building modern and intuitive interfaces with a passion for design.
       </div>
@@ -84,6 +84,7 @@ import ProjectCard from '../components/ProjectCard.vue'
       font-weight: 700;
       font-size: 54px;
       width: 480px;
+      padding-right: 150px;
     }
 
     .subtitle {
